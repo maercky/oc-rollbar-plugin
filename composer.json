@@ -1,0 +1,33 @@
+{
+  "name": "maercky/rollbar",
+  "type": "october-plugin",
+  "extra": {
+    "installer-name": "rollbar"
+  },
+  "description": "Rollbar connector for October CMS",
+  "homepage": "https://github.com/maercky/oc-rollbar-plugin",
+  "keywordsd": [
+    "october",
+    "cms",
+    "octobercms",
+    "plugin",
+    "rollbar"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tim Vermaercke",
+      "email": "tim@timvermaercke.be"
+    }
+  ],
+  "require": {
+    "php": "^5.6 | ^7.0",
+    "rollbar/rollbar": "~1.1"
+  },
+  "minimum-stability": "stable",
+  "scripts": {
+    "build": [
+      "@composer install --no-progress --no-interaction --no-suggest"
+    ]
+  }
+}
