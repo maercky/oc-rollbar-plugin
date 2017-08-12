@@ -96,13 +96,14 @@ class Plugin extends PluginBase
      */
     private function addRollbarHandler(Logger $monolog)
     {
-        $settings = ['rollbar_enabled', 'rollbar_acces_token', 'rollbar_environment'];
+        $settings = ['rollbar_enabled', 'rollbar_access_token', 'rollbar_environment'];
+
         if (!$this->checkIfSettingsAreFilledOut($settings)) {
             return $monolog;
         }
 
         $config = [
-            'access_token' => Settings::get('rollbar_acces_token'),
+            'access_token' => Settings::get('rollbar_access_token'),
             'environment' => Settings::get('rollbar_environment'),
         ];
 
